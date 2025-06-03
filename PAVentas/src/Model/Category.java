@@ -1,11 +1,10 @@
 package Model;
 import java.util.List;
 
-
 public class Category {
     private Integer categoryId;
     private String name;
-    private List<Product> product;
+    private List<Product> product; //Agregacion de productos
 
     public void addProduct(Product product) {
         this.product.add(product);

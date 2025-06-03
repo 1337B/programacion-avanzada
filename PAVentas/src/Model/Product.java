@@ -1,19 +1,18 @@
 package Model;
-
-import jdk.jfr.Category;
+import Model.Category;
 import java.awt.*;
 
 
 public class Product {
     private int productId;
     private String name;
-    private String price;
-    private final Brand brand;
+    private Double price;
+    private final Brand brand; // Composicion con brand
     private Category category;
     private Image image;
     private int stock;
 
-    public Product(int productId, String name, String price, Brand brand, Category category, Image image, int stock) {
+    public Product(int productId, String name, Double price, Brand brand, Category category, Image image, int stock) {
         this.productId = productId;
         this.name = name;
         this.price = price;
@@ -31,7 +30,7 @@ public class Product {
         return name;
     }
 
-    public String getPrice() {
+    public Double getPrice() {
         return price;
     }
 
@@ -55,7 +54,7 @@ public class Product {
         this.name = name;
     }
 
-    public void setPrice(String price) {
+    public void setPrice(Double price) {
         this.price = price;
     }
 

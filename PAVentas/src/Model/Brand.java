@@ -4,7 +4,7 @@ import java.util.List;
 public class Brand {
     private  int brandId;
     private String name;
-    private List<Product> productList;
+    private List<Product> productList; //Asociacion con productos
 
     public int getBrandId() {
         return brandId;
